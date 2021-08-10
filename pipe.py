@@ -4,7 +4,13 @@ import matplotlib.pyplot as plt
 import nibabel as nib
 
 """
+Class file defining the data pipe-line for segmentation of the Hippocampus using the HarP publicly available dataset, 
+specifically the .mnc file format version of the dataset.
+Pipe takes .mnc files, extracts specified MRI view and left or right brain hemisphere, locates segmented slices, 
+then outputs all images for training and saves them to disk.
+Do not change the original file names.
 
+More informatiopn on the dataset can be found at http://www.hippocampal-protocol.net/SOPs/index.php
 """
 # Paths
 dataset_dir = '../HarPData/'
